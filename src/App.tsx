@@ -1,7 +1,8 @@
-import * as React from 'react';
-import './App.css';
+import * as React from "react";
+import "./App.css";
+import Posts from "./components/Posts/Posts";
 
-const logo = require('./logo.svg');
+const logo = require("./logo.svg");
 
 class App extends React.Component {
   render() {
@@ -14,6 +15,7 @@ class App extends React.Component {
         <p className="App-intro">
           To get started, edit <code>src/App.tsx</code> and save to reload.
         </p>
+        <div>sdfsd</div>
       </div>
     );
   }
