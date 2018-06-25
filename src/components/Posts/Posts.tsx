@@ -1,4 +1,5 @@
 import * as React from "react";
+import PostTypes from "post-types";
 import Post from "../Post/Post";
 import { connect } from "react-redux";
 import { fetchPosts } from "../../actions/postActions";
@@ -29,5 +30,10 @@ class Posts extends React.Component<{}, IPostsState> {
 const mapStateToProps = state => ({
   posts: state.posts.items
 });
+
+Posts.propTypes = {
+  fetchPosts: PropTypes.func.isRequired,
+  posts: PropTypes.array.isRequired
+};
 
 export default connect(mapStateToProps, { fetchPosts })(Posts);
